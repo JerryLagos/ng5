@@ -1,1 +1,627 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+.cls-marker {
+    background: #ff000047 !important;
+  }
+  
+  .cls-form {
+    background: #f0f0ff96;
+    padding: 11px;
+    box-shadow: 0px 0px 1px 1px #cbcbed;
+  }
+  
+  .nav-tabs > li {
+      cursor: pointer;
+  }
+  
+  .b {
+    margin: 0 0 0px !important; flex-direction: column; resize: auto; white-space: pre-wrap; word-wrap: break-word; font-weight: bold;
+  }
+  
+  
+  ul {
+    margin-bottom: 1px !important;
+  }
+  
+  .cls-list-color {width: 61px;
+      float: left;
+      position: relative;}
+  .cls-content-list-products {
+      margin: 10px 10%;
+      position: relative;
+      float: left;
+      width: 80%;
+  }
+  
+  .cls-sin-producto {
+     position: absolute;
+      z-index: 999999;
+      left: 27%;
+      color: white;
+      font-size: 31px;
+      text-transform: uppercase;
+      top: 21%;
+      text-align: right;
+      font-weight: bold;
+  }
+  
+  .cls-btn-sin-producto {
+      position: absolute;
+      top: 73%;
+      background: #ff00ff4a;
+      box-shadow: 0px 0px 3px 1px white;
+      color: white;
+      font-size: 29px !important;
+      padding: 5px 30px !important;
+      text-transform: uppercase;
+      left: 40%;
+  }
+  
+  .cls-btn-sin-producto:hover {
+      background: white;
+      color: #ff00ff4a !important;
+      font-weight: bold;
+  }
+  
+  
+  .cls-showPrice {
+    font-size: 19px; 
+    border-top: 1px solid;
+    font-weight: bold;
+  }
+  .g-signin2 {
+      height: 66px;
+      margin-top: 5px;
+      margin-left: 2px;
+    }
+                      
+  .page-header {
+      padding-bottom: 3px !important;
+      margin: 0px 0 -1px !important;
+      border-bottom: 1px solid #eee !important;
+      background: #45cae7 !important;
+      color: white !important;
+      font-weight: bold !important;
+      padding-top: 1px !important;
+      padding-left: 10px;
+  }
+  
+  .cls-content-data {
+      border: 1px solid #45cae7;
+      padding: 0px !important;
+      margin: 18px 0px;
+      padding-bottom: 15px !important;
+  }
+  
+    .cls-what {
+      color: white;
+      font-size: 25px;
+      background: green;
+      padding: 3px;
+      border-radius: 50px;
+      width: 27px;
+      text-align: center;
+  }
+  .cls-autentication-required .cls-all {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.15);
+    display: block;
+    position: absolute;
+    z-index: 999;
+    top: 0px;
+  }
+  
+  .cls-autentication-required .cls-modal-authentication {
+    height: 100%;
+    width: 100%;
+    background: white;
+    margin: 0px;
+    position: absolute;
+    z-index: 99999;
+  }
+  
+  #mydiv {
+      height: 6px;
+      width: 100%;
+      position: fixed;
+      top: 0px !important;
+      overflow: hidden;
+      background: linear-gradient(to right, red , yellow);
+  }
+  #mydiv:before{
+    display: block;
+    position: absolute;
+    content: "";
+    left: -200px;
+    width: 200px;
+    height: 6px;
+    background-color: #2980b9;
+    animation: loading 2s linear infinite;
+  }
+  
+  @keyframes loading {
+      from {left: -200px; width: 30%;}
+      50% {width: 30%;}
+      70% {width: 70%;}
+      80% { left: 50%;}
+      95% {left: 120%;}
+      to {left: 100%;}
+  }
+     
+  
+  /*perfil */
+  
+    .cls-list-opion {
+  
+      position: relative;
+      float: left;
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0px;
+    }
+  
+    .cls-list-opion  img {
+      width: 40px;
+      height: 40px;
+      position: relative;
+      float: left;
+    }
+  
+    .cls-list-opion .content {
+        width: 95%;
+        float: right;
+        position: relative;
+        padding: 0px 0px 0px 5px;
+    }
+  
+  
+  
+    .cls-content-img .cls-menu {
+      position: absolute;
+      bottom: 0px;
+      display: inline-block;
+      right: 0px;
+      width: 100%;
+      float: left;
+      background: #e9ebee;
+      padding: 0px;
+      /*z-index: 9999999999999999999;*/
+    }
+    .cls-content-img .cls-menu nav { 
+      display: inline;
+      list-style-type: none;
+    }
+  
+    .cls-content-img .cls-menu li {
+      float: left;
+      padding: 11px 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  
+    .cls-content-img .cls-menu li:hover { 
+      background: #4267b2;
+      color:  white;
+    }
+    .cls-content-img .cls-menu a {
+        display: block;
+        padding: 8px;
+        background-color: #dddddd;
+    }
+    .cls-content-repear-prodduct {
+      position: relative;
+      float: left;
+      height: 358px !important;
+      width: 23% !important;
+      margin: 10px;
+    }
+  
+    .cls-content-img {
+          overflow: hidden;
+      height: 280px;
+      width: 100%;
+      position: relative;
+      left: 0%;
+      top: 0px;
+    }
+  
+  
+    .cls-product-perfil {
+      height: 330px !important;
+  
+    }
+  
+    .cls-without-portada {
+      height: 500px;  width: 100%; background: linear-gradient(#0000ff85,#ff0000c2, #ffff0063);
+    }
+  
+  
+    .cls-content-img .cls-portada {
+      position: relative;
+        overflow: hidden;
+        float: left;
+        display: block;
+    }
+  
+    .cls-content-img .cls-perfil {
+      position: absolute;
+      left: 44%;
+      border-radius: 52%;
+      height: 150px;
+      width: 150px;
+      border: 1px solid;
+      top: 20%;
+    }
+  
+    .cls-content-img .cls-descri {
+      
+      position: absolute;
+      left: 0px;
+      top: 60%;
+      background: black;
+      /*background: linear-gradient(108deg, #00000085, #ffffff0d);*/
+      padding: 9px;
+      color: white;
+      width: 100%;
+    }
+  
+  
+  
+  /*Principal*/
+  
+  
+  
+  .cls-catego {
+    color: black;
+    font-weight: bold;
+    border-bottom: 1px solid;
+    text-transform: uppercase;
+  }
+  
+  .cls-article-text {
+      position: absolute;
+      top: 10px;
+      right: 27px;
+      color: white;
+      font-size: 35px;
+      font-weight: bold;
+  }
+  .cls-cont-logo {
+      position: absolute;
+      top: 5px;
+      height: 43px;
+      width: 43px;
+      border-radius: 55px;
+      border: 2px solid white;
+      right: 5px;
+  }
+  
+  .cls-cnt-data {
+    margin: 15px 0px 15px 0px;
+  }
+  
+  .cls-block {
+    position: absolute;
+    width: 40%;
+    background: #024959;
+    top: 20%;
+    z-index: 99999999;
+    left: 16%;
+    color: white;
+  }
+  
+  .cls-block .cls-list {
+      height: 26px;
+      padding: 3px;
+      border-bottom: 1px solid;
+      margin: 10px;
+      cursor: pointer;
+  }
+  
+  
+  ul#menup {
+    padding: 1px 0px;
+    z-index: 999;
+    height: 100%;
+    margin-left: 33%;
+    -webkit-transition: all linear 3s;
+    transition: all linear 3s;
+  }
+    
+  ul#menup li {
+    color: black;
+    float: left;
+    list-style: none;
+    padding: 0px 14px;
+    font-size: 17px;
+    text-transform: uppercase;
+    -webkit-transition: all linear 3s;
+    transition: all linear 3s;
+  }
+    
+  ul#menup li:hover{
+    -webkit-transition: all linear 1s;
+    transition: all linear 1s;
+    color: black; 
+    cursor:pointer;
+    transition-timing-function: ease-in;
+  }
+    
+  ul#menup ul {
+    transition-timing-function: ease;
+    display: none;
+    z-index: 999999999999;
+    position: absolute;
+    float: left;
+    background: white;
+    color: black;
+    width: 100%;
+    margin: 0;
+    right: 0px;
+    padding: 100px 0px;
+    top: 50px;
+  
+  }
+   
+  ul#menup li a{
+   color: white;
+  } 
+  ul#menup ul li a{
+    color: black;
+    position: relative;
+    left: 0px;
+    float: left;
+    margin-bottom: 15px;
+    margin-left: 15px;
+  }
+    
+  ul#menup ul li .cls-sub {
+    -webkit-transition: all linear 3s;
+    transition: all linear 3s;
+    
+    position: relative;
+    left: 0px;
+    color: gray;
+    font-weight: bold;
+    margin: 0;
+    text-transform: capitalize;
+    background: transparent;
+    padding: 0px;
+    margin: 0px;
+    float: left;
+    width: 243px;
+  }
+  
+  
+  
+  ul#menup ul li .cls-sub li{
+    color: black;
+    margin-bottom: 5px;
+    font-size: 10px;
+    text-align: left;
+    float: left;
+    width: 243px;
+    text-transform: capitalize;
+    font-size: 15px;
+    color: gray;
+    font-weight: bold;
+    display: block;
+  }
+  
+  ul#menup ul li .cls-sub li:hover {
+    transition: all linear 0.5s;
+    color: black;
+    border-bottom: 1px solid;
+    transition: linear;
+  }
+  
+  ul#menup li:hover ul,
+  ul#menup li.iehover ul {
+   display: inline;
+   cursor:pointer;
+   top: inherit;
+   padding: 5px 0px;
+  }
+  
+  #cls-info-user img {
+    position: relative;
+    float: right;
+    top: -8px;
+    right: -5px;
+  }
+  
+  .contant {
+    width: 95%;
+    padding-left: 8%;
+    padding-right: 3%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    float: left;
+  
+  }
+  
+  .cls-space-product {
+    position: relative;
+    float: left;
+    width: 20%;
+  }
+  
+  
+  
+  .modal-dialog {
+    margin: 15px 91px !important;
+    background: white;
+    position: relative !important;
+    min-height: 1px;
+    float: left;
+    width: 85% !important;
+  }
+  
+  
+  
+  
+  
+    .cls-content-productos {
+      margin: 0px 80px 0px 80px;
+      position: relative;
+      top: 0px;
+    }
+  
+    .cls-prueba{
+      position: absolute;
+      bottom: 0px !important;
+    }
+  
+  
+  
+    .cls-container-producto {
+      margin: 2px;
+      height: 320px;
+      cursor: pointer;
+      background: white;
+    }
+  
+  
+  
+    .cls-container-producto:hover {
+      box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.37);
+    }
+  
+  
+  
+    .cls-container-producto .cls-continer-img {
+      height: 265px;
+      max-width: 100%;
+    }
+  
+    .cls-se {
+      position: absolute; top: 23%; width: 50% !important; left: 18%;
+    }
+  
+    .cls-content-img .cls-name {
+         position: absolute; top: 0px; left: 0px; z-index: 9999999; width: 100%; font-weight: bold; text-transform: uppercase; color: white;
+    }
+  
+    .cls-img-button {
+      height: 51px; 
+    }
+  
+    .cls-content-login {
+      margin: 32% 10px; width: 80%; border: 4px dashed black; padding: 31px;
+    }
+    .cls-log-principal {
+      margin-top: 16%;margin-left: 8%; width: 100%;
+    }
+  
+      .abcRioButtonContents span {
+        display: none !important;
+      }
+  
+      .abcRioButtonBlue {
+          height: 46px !important;
+          width: 345px !important;
+      }
+      
+  @media screen and (max-width: 800px) {
+  
+    .cls-log-principal {
+          margin-top: 11%; margin-left: 0%;
+    }
+  
+    .abcRioButtonBlue .abcRioButtonContentWrapper {
+      background-size: 274px 36px !important;
+      height: 48px !important;
+    }
+  
+    .abcRioButtonBlue {
+        height: 38px !important;
+        width: 276px !important;
+        left: -2px;
+    }
+  
+    .cls-content-login {
+      margin: 26% 2px; width: 80%; border: 4px dashed black; padding: 31px;
+    }
+  
+    .col-md-1 , .col-md-2 , .col-md-3 , .col-md-4 , .col-md-5 , .col-md-6 , .col-md-7 , .col-md-8 , .col-md-9 , .col-md-10 , .col-md-11 , .col-md-12 {
+        padding: 0px !important;
+    }
+  
+    .cls-img-button {
+      height: 41px;
+    }
+    .cls-content-detail { padding: 9px !important; }
+    .cls-content-img .cls-descri { display: none; }
+    .cls-content-img { height: 194px; }
+    .cls-content-repear-prodduct { width: 100% !important; margin: 0px; }
+    .cls-content-img .cls-name { margin: 2px;  }
+  
+    .modal-dialog {
+        margin: 0px 0px !important;
+        width: 100% !important;
+    }
+  
+    .cls-content-img .cls-perfil {
+      left: 36%;
+      height: 90px;
+      width: 90px;
+    }
+  
+    nav#manudos ul li {
+      padding: 5px !important;
+    }
+  
+    .state {
+      display: none !important;
+    }
+  
+    .contant {
+        width: 100%;
+        position: relative;
+        float: left;
+        padding-left: 0;
+        padding-right: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+  
+  
+    .cls-container-producto {
+      margin: 2px;
+      height: 450px;
+      cursor: pointer;
+      background: white;
+    }
+  
+    .cls-container-producto .cls-continer-img {
+      height: 350px;
+      max-width: 100%;
+    }
+  
+    ul#menup {
+       margin: 0 !important; 
+    }
+  
+    ul#menup li {
+      float: left !important;
+      list-style: none !important;
+      padding: 6px 3px !important;
+      font-size: 10px !important;
+      text-transform: uppercase !important;
+    }
+  
+    nav#manudos {
+      height: 115px !important;
+    }
+  
+    .cls-se {
+        position: absolute;
+        top: 69px;
+        width: 96% !important; 
+        left: 3%;
+    }
+  
+  }
+  

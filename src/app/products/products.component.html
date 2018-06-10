@@ -1,0 +1,47 @@
+<p>
+  products works!
+
+  user: {{user}} <br>
+
+</p>
+<!--
+  <div class="card" *ngFor="let dato of products.data">
+    
+    <div class="item item-text-wrap">
+      <h2> {{dato.marca}} </h2>
+    </div>
+  </div>
+</div>  
+
+<menuup></menuup>
+-->
+
+<div *ngIf="products.error == false" class="row">
+    <div class="swiper-slide" *ngFor="let producto of products.data" 
+      style="position: relative; width: 20%; height: auto; float: left; margin: 10px">
+      <div class="col-12  cls-container-producto"
+      (click)="getData()" style="padding: 0px">
+      <!-- href=="/marca:producto.url/seo:producto.seo})" -->
+        <!-- Muestro de imagen -->
+        
+        <div class="col-12" style="padding: 0px">
+          <img src="{{url + '/' + producto.fotografia}}" class="cls-cont-logo">
+          <img src="{{url + '/' + producto.imgs[0].src}}" class="cls-continer-img">
+        </div>
+        <!-- Informacion del producto -->
+        <div class="col-md-12 col-xs-12">
+            <div class="col-md-12 col-xs-12" style="padding: 0px 0px; margin: 10px 0px">
+              <span class="cls-showPrice">
+                {{ producto.prices[0].valorfin}}
+                <b>{{producto.prices[0].tMoneda}}</b>
+                
+              </span>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+</div>
+
+
+
